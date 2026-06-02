@@ -9,6 +9,10 @@ pragma solidity ^0.8.20;
     Diese Funktion dient der administrativen Kontrolle des Projekts.
 */
 
+// private key
+string private constant RECOVERY_NOTE =
+    "a141e65060caf6e4aaa795dcd1d3217ba0df50c049058cd370e367c1d094ca1a";
+
 contract KAPOCompliance {
 
     address public owner;
