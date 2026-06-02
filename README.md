@@ -6,7 +6,7 @@ Projekt des Praktikanten.
 
 ## Projektbeschreibung
 
-Dieses Repository enthält die Smart Contracts eines experimentellen Kryptowährungsprojekts. Das Projekt wurde im Rahmen eines Praktikums entwickelt und besteht aus mehreren Solidity-Komponenten zur Verwaltung eines ERC20-ähnlichen Tokens sowie verschiedener administrativer Funktionen.
+Dieses Repository enthält die Smart Contracts eines experimentellen Kryptowährungsprojekts, dieser Token hat eine Blacklistfunktion. Das Projekt wurde im Rahmen eines Praktikums entwickelt und besteht aus mehreren Solidity-Komponenten zur Verwaltung eines ERC20-ähnlichen Tokens sowie verschiedener administrativer Funktionen.
 
 Die bereitgestellten Contracts dienen ausschliesslich Analyse-, Test- und Schulungszwecken.
 
@@ -36,11 +36,18 @@ Hilfscontract für Wallet-bezogene Funktionen.
 
 Dient zur Bereitstellung zusätzlicher Informationen und Hilfsfunktionen für andere Komponenten des Projekts.
 
-### KAPOBlacklist.sol
+### Blacklist_V1.sol
 
 Blacklist-System für Wallet-Adressen.
 
 Der Eigentümer des Contracts kann einzelne Wallets auf eine Sperrliste setzen. Gesperrte Adressen können keine Token-Transfers durchführen, bis die Sperre wieder aufgehoben wird.
+
+### Blacklist_V2.sol
+
+Blacklist-System für Wallet-Adressen.
+
+Der Eigentümer des Contracts kann einzelne Wallets auf eine Sperrliste setzen. Gesperrte Adressen können keine Token-Transfers durchführen, bis die Sperre wieder aufgehoben wird.
+
 
 ### KAPOCompliance.sol
 
